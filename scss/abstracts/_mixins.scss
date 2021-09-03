@@ -1,0 +1,26 @@
+
+
+@mixin transform-center ($top-value: 50%){
+    top: $top-value;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+@mixin slide-animation{
+	position: relative;
+	left: -100%;
+	transform:translateX(100%);
+}
+
+
+
+@mixin mediaQuery($arg) {
+    @media screen and (max-width:$arg){
+        @content;
+    }
+}
+    
+
+ 

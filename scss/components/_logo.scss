@@ -1,0 +1,30 @@
+@use '../abstracts/index' as *;
+
+
+
+.logo {
+    font-size: $font-size-logo;
+    color:$main-light-color;
+    width: 90px;
+    height: 90px;
+    border: 3px solid $main-light-color;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    @include mediaQuery(1000px){
+        font-size: 25px;
+        width: 90px;
+        height: 90px;
+    }
+}
+  
+.logo img {
+    width: 110px;
+    height: 110px; }
+
+
+

@@ -1,0 +1,364 @@
+/* note */
+  
+  
+  .hamburger-menu .menu, .card-overlay, .card-img {
+    width: 100%;
+    height: 100%; }
+
+
+/* .hamburger-menu */
+.navbar {
+    position: relative;
+    z-index: 200;
+}
+.input[Attributes Style] {
+    display: none;
+}
+
+.input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+.input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
+.hamburger-menu {
+    width: 35px;
+    height: 35px;
+}
+.hamburger-menu {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    z-index: 300;
+}
+
+
+.checkbox:checked ~ .hamburger-menu .menu {
+    transform: rotateZ(90deg);
+}
+.hamburger-menu .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.hamburger-menu .menu, .card-overlay, .card-img {
+    width: 100%;
+    height: 100%;
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+    transform: rotateZ(-40deg);
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+    opacity: 0;
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+    transform: rotateZ(40deg);
+}
+
+@media screen and (max-width: 800px) {
+    .hamburger-menu .menu-line {
+        height: 3px;
+    }
+}
+
+.hamburger-menu .menu-line {
+    width: 100%;
+    height: 4px;
+    background-color: #d3ab55;
+    transform-origin: right;
+    transition: all 0.5s 0.5s;
+}
+
+
+
+
+
+.navbar-navigation {
+    display: flex;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+    left: 0;
+}
+
+@media screen  and (max-width: 800px) {
+    .navbar-navigation-left {
+        display: none;
+}
+.navbar-navigation-left {
+    width: 50vw;
+    height: 100vh;
+    background-color: #262626;
+    position: fixed;
+    left: -50vw;
+    transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+@media screen  and (max-width: 1000px) {
+    .navbar-navigation-left .left-img-1 {
+        left: 5%;
+}
+.navbar-navigation-left .left-img-1 {
+    top: 15%;
+    left: 15%;
+}
+
+@media screen  and (max-width: 1000px) {
+    .navbar-navigation-left .left-img-2 {
+        left: 15%;
+}
+.navbar-navigation-left .left-img-2 {
+    top: 35%;
+    left: 25%;
+}
+
+@media screen  and (max-width: 1000px) {
+    .navbar-navigation-left .left-img-3 {
+        left: 25%;
+}
+.navbar-navigation-left .left-img-3 {
+    top: 55%;
+    left: 35%;
+
+@media screen  and (max-width: 1000px) {
+    .navbar-navigation-left .left-img {
+        width: 65%;
+}
+@media screen  and (max-width: 1300px) {
+    .navbar-navigation-left .left-img {
+    width: 55%;
+}
+.navbar-navigation-left .left-img {
+    width: 50%;
+    position: absolute;
+    box-shadow: 0 15px 60px rgb(0 0 0 / 40%);
+    opacity: .7;
+    border-radius: 10px;
+}
+
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+    right: 0;
+}
+
+@media screen  and (max-width: 800px) {
+    .navbar-navigation-right {
+        width: 100vw;
+        right: -100vw;
+}
+.navbar-navigation-right {
+    width: 50vw;
+    height: 100vh;
+    background-color: #1f1d1d;
+    position: fixed;
+    right: -50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+}
+.navbar-navigation .nav-list-item {
+    list-style: none;
+}
+@media (max-width: 600px){
+    .navbar-navigation .nav-list-link {
+        font-size: 40px;
+}
+.navbar-navigation .nav-list-link {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+    transition: all .5s;
+}
+.navbar-navigation .nav-list-item {
+    list-style: none;
+}
+
+
+@media (max-width: 600px){
+    .navbar-navigation .nav-list-link {
+        font-size: 40px;
+}
+.navbar-navigation .nav-list-link {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+    transition: all .5s;
+}
+
+/* End of hambergur menu */
+
+
+
+
+
+
+
+
+/* media query */
+
+
+    @media (max-width: 1000px){}
+    .logo {
+        font-size: 50px;
+        width: 90px;
+        height: 90px;}
+
+
+    
+    
+    @media (max-width: 1000px){}
+    .main-name {
+        font-size: 40px;}  
+    
+
+    @media(max-width: 1000px){}
+        .main-heading {
+            font-size: 60px;}
+
+    @media(max-width: 1600px){}
+        .main-heading {
+            font-size: 80px;}
+
+
+
+
+@media (max-width: 1600px){}
+    .sub-heading {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+@media (max-width: 1300px){}
+    .sub-heading {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+
+
+@media (max-width: 800px){}
+.main-btn {
+    width: 150px;
+    height: 35px;
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 800px){}
+.about-us-left {
+    display: none;}
+
+    @media (max-width: 1300px){}
+.about-us-left {
+    left: -150px;}
+
+
+
+
+    @media(max-width: 800px){}
+.about-us-right {
+    width: 100%;
+}
+@media (max-width: 1300px){}
+.about-us-right {
+    padding: 0 50px;
+}
+
+
+
+
+
+
+
+    @media (max-width: 1000px){}
+.about-us-right .stars {
+    margin: 15px 0;
+}
+
+
+
+
+@media (max-width: 1000px){}
+.about-us-right .description {
+    font-size: 14px;
+}
+@media (max-width: 1600px){}
+.about-us-right .description {
+    font-size: 18px;
+}
+
+
+
+
+@media (max-width: 900px){}
+.card-overlay-heading {
+    font-size: 35px;}
+
+
+    @media (max-width: 900px){}
+.card-overlay-paragraph {
+    font-size: 20px;}
+
+
+    @media (max-width: 900px){}
+.card-overlay-btn {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+}
+
+
+  
+  
+  
+  
+  
+  

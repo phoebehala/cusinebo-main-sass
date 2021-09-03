@@ -1,0 +1,16 @@
+@use '../scss/abstracts/index';
+
+@use '../scss/base/base';
+
+// component
+@use '../scss/components/logo';
+
+
+// header
+@use '../scss/layout/header';
+
+// home page
+@use '../scss/pages/home';
+
+// footer
+@use '../scss/layout/footer';

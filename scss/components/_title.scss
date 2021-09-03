@@ -1,0 +1,21 @@
+@use '../abstracts/index' as *;
+
+.main-name {
+    font-family: $font-family-main-name;
+    color: #bbb;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include mediaQuery(1000px){
+        font-size: 40px;   
+    }
+}
+  
+.sub-name {
+    font-family: $font-family-sub-name;
+    font-size: 18px;
+    color: #bbb;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase; }

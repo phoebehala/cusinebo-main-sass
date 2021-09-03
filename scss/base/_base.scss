@@ -1,0 +1,8 @@
+@use '../abstracts' as *;     // means '../abstracts/index.scss'
+
+* {
+    margin: 0;
+    padding: 0; }
+  
+body {
+    background:$main-dark-color; }
